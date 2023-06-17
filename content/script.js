@@ -2,7 +2,7 @@ const container = document.querySelectorAll(".container-wrapper div");
 
 function elementSelected() {
     container.forEach(function(element, index){
-        element.addEventListener("click", function() {
+        element.addEventListener("click", function clickEvent() {
             if(index === 0) {
                 console.log("Clicou na div1");
             }else if(index === 1) {
@@ -12,6 +12,6 @@ function elementSelected() {
             }
         })
     })
-}
+};
 
 elementSelected();
