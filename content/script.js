@@ -15,3 +15,5 @@ function elementSelected() {
 };
 
 elementSelected();
+
+console.log("teste");
