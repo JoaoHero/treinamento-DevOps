@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/css/styles.css">
+
+<h1>Olá o seu nome é {{user.name}} {{user.surname}}<br><br>Sua idade: {{user.age}}</h1>
+
+{{#if auth}}
+    <p>Você está autenticado!! <a href="/dashboard">Clique aqui</a></p>
+
+    {{else}}
+
+    <p>Você não está logado, para logar: <a href="/dashboard">Clique aqui!!</a></p>
+{{/if}}
